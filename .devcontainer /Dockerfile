@@ -9,7 +9,7 @@ RUN apt-get update \
     curl git sqlite3 entr source-highlight
 
 # Install SAP CAP SDK globally
-USER PhanMinhPhat
+USER @PhanMinhPhat
 RUN npm install -g @sap/cds-dk
 
 # Ready!
