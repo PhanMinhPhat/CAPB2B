@@ -8,9 +8,9 @@ RUN apt-get update \
     && apt-get -y install --no-install-recommends \
     curl git sqlite3 entr source-highlight
 
-    # Ready!
-WORKDIR /home/node
-
 # Install SAP CAP SDK globally
 USER node
 RUN npm install -g @sap/cds-dk
+
+# Ready!
+WORKDIR /home/node
